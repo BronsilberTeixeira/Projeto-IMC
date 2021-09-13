@@ -21,19 +21,20 @@
         <section class="column align-items-center">
             <form>
                 <div class="col-auto">
+                    <label class="visually-hidden" >Nome</label>
+                    <input id="nome" type="text" class="form-control"  placeholder="Jorge" required>
+                </div>
+                <div class="col-auto">
                     <label class="visually-hidden" >Altura</label>
-                    <input type="text" class="form-control"  placeholder="Coloque sua altura">
+                    <input id="altura" type="number" class="form-control"  placeholder="1.75" required>
                 </div>
                 <div class="col-auto">
                     <label class="visually-hidden" for="autoSizingInput">Peso</label>
-                    <input type="text" class="form-control"  placeholder="Coloque seu peso">
+                    <input id="peso" type="number" class="form-control"  placeholder="76">
                 </div>
-                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button id="calcular" type="button" class="btn btn-outline-success">Success</button>
             </form>
-            <div class="col-auto">
-                <label class="visually-hidden">Resultado</label>
-                <input type="text" class="form-control"  placeholder="Resultado">
-            </div>
+            <div id="resultado" class="col-auto result"></div>
         </section>
         <footer class="copyright">
             <p>&copy; Cotemig</p>
